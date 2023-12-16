@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>18 октября</title>
+</head>
+
+<body>
+	<div class="score">
+		<h1 id="score">Выш счет: </h1>
+	</div>
+	<div id="border_background">
+		<div id="game_container">
+			<div id="basket"></div>
+			<div id="ball"></div>
+		</div>
+	</div>
+
+<style>
+	.score {
+		display: flex;
+		justify-content: center;
+	}
+	#border_background {
+		height: 100vh;
+		background-image: url("background.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#game_container {
+		width: 620px;
+		height: 368px;
+		position: relative;
+		border-radius: 20px;
+		margin-bottom: 60px;
+		overflow: hidden;
+		
+	}
+	
+	#basket {
+		width: 100px;
+		height: 20px;
+		border: 1px solid black;
+		border-radius: 20px;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
+	
+	#ball {
+		width: 20px;
+		height: 20px;
+		border: 1px solid black;
+		border-radius: 20px;
+		position: absolute;
+		top: 0px;
+	}	
+</style>
+<script src="script.js"></script>
+</body>
+</html>
